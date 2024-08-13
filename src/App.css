@@ -1,0 +1,167 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-family: 'Arial', sans-serif;
+  background: url('./images/geometry.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.inputField {
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin: 10px;
+  width: 110px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #76c7c0;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #63b3ad;
+}
+
+input:active{
+  background-color: #4CAF50;
+}
+
+.numberButtons {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  grid-template-rows: repeat(4, 60px);
+  grid-gap: 32px;
+  margin-bottom: 20px; 
+}
+
+.numberButton {
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #6f81f8;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #e0f7fa;
+  color: #333;
+  transition: background-color 0.3s;
+}
+
+.numberButton:hover {
+  background-color: #b2ebf2;
+}
+
+.numberButton:active {
+  background-color: #4CAF50; 
+}
+
+.Reset {
+  width: 250px;
+  height: 40px;
+  background-color: #f44336; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.Reset:hover {
+  background-color: #e53935;
+  font-weight: bold;
+}
+
+.Reset:active {
+  background-color: #d32f2f; 
+}
+.Delete {
+  grid-column: 2 / span 2; /* Position the delete button below 8 and 9, spanning 2 columns */
+  grid-row: 4; /* Place the delete button in the last row */
+  background-color: #ff9800; /* Orange color for the delete button */
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.Delete:hover {
+  background-color: #fb8c00;
+}
+
+.Delete:active {
+  background-color: #f57c00; /* Darker orange when the delete button is active */
+}
+
+
+.result {
+  min-width: 240px;
+  max-width: 800px;
+  height: 30px;
+  font-size: 32px;
+  color: #333;
+  padding: 10px 20px;
+  border: 2px solid #76c7c0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttonField {
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+  margin-bottom: 20px;
+}
+
+.buttonField button {
+  padding: 18px;
+  font-size: 20px;
+  border: 2px solid #76c7c0;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttonField button:hover {
+  background-color: #e0f7fa;
+}
+
+.buttonField button:active {
+  background-color: #b2ebf2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttonField button.Add {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.buttonField button.Sub {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.buttonField button.Mul {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.buttonField button.Divi {
+  background-color: #2196f3;
+  color: #fff;
+}
